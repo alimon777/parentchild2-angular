@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parentchild2';
+
+  childItems: string[] = []; 
+
+  childEvent(childItem: string) {
+    this.childItems.push(childItem); 
+  }
 }
